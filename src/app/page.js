@@ -1,7 +1,11 @@
 import Image from "next/image";
+import HeroSection from "./components/HeroSection";
 
 export default function Home() {
   return (
-    <div>hello im adil</div>
+    <main>
+      <HeroSection />
+      UNDER CONSTRUCTION
+    </main>
   );
 }
