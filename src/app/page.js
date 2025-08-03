@@ -7,7 +7,7 @@ export default function Home() {
     <main>
       <HeroSection />
       <ProjectSection/>
-      UNDER CONSTRUCTION
+      <h1 className="text-center">UNDER CONSTRUCTION ...</h1>
     </main>
   );
 }
