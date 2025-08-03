@@ -1,5 +1,8 @@
 'use client';
 
+import { Button } from "@/components/ui/button"
+
+
 const projects = [
   {
     title: 'Rollers AI',
@@ -47,22 +50,23 @@ export default function ProjectSection() {
                 <p className="text-base mb-6">{project.description}</p>
               </div>
               <div className="flex justify-center gap-4 mt-auto">
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-4 py-2 bg-[#E83F6F] text-white font-semibold rounded-full hover:bg-[#c52b5b] transition"
+                <Button
+                  asChild
+                  className="bg-[#E83F6F] hover:bg-[#c52b5b] text-white font-semibold text-sm"
                 >
-                  Live Site
-                </a>
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-4 py-2 border-2 border-[#E83F6F] text-[#E83F6F] font-semibold rounded-full hover:bg-[#E83F6F] hover:text-white transition"
+                  <a href={project.link} target="_blank" rel="noopener noreferrer">
+                    Live Site
+                  </a>
+                </Button>
+                <Button
+                  asChild
+                  variant="outline"
+                  className="border-[#E83F6F] text-[#E83F6F] hover:bg-[#E83F6F] hover:text-white"
                 >
-                  GitHub
-                </a>
+                  <a href={project.github} target="_blank" rel="noopener noreferrer">
+                    GitHub
+                  </a>
+                </Button>
               </div>
             </div>
           ))}
