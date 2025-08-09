@@ -1,13 +1,16 @@
 import Image from "next/image";
 import HeroSection from "./components/HeroSection";
 import ProjectSection from "./components/ProjectSection";
+import TeachingSection from "./components/TeachingSection";
+import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
     <main>
+      <Navbar/>
       <HeroSection />
       <ProjectSection/>
-      <h1 className="text-center">UNDER CONSTRUCTION ...</h1>
+      <TeachingSection signupUrl="https://tutoring.adilh.co/"/>
     </main>
   );
 }

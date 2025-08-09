@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { Button } from "@/components/ui/button"
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt, FaPython } from 'react-icons/fa';
+import { FaJs, FaReact, FaNodeJs, FaGitAlt, FaPython } from 'react-icons/fa';
 import { SiNextdotjs, SiTypescript, SiTailwindcss, SiCplusplus, SiFastapi } from 'react-icons/si';
 
 export default function HeroSection() {
