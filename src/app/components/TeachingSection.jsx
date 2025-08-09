@@ -8,6 +8,7 @@ import { GraduationCap, ExternalLink } from "lucide-react";
 // Example: <TeachingSection signupUrl="https://calendly.com/yourname/intro-class" />
 
 const SKILLS = [
+  "Scratch",
   "HTML & CSS",
   "JavaScript",
   "TypeScript",
