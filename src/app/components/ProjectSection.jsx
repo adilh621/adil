@@ -2,7 +2,6 @@
 
 import { Button } from "@/components/ui/button"
 
-
 const projects = [
   {
     title: 'Rollers AI',
@@ -35,7 +34,7 @@ const projects = [
 
 export default function ProjectSection() {
   return (
-    <section className="bg-white text-[#2274A5] py-20">
+    <section className="bg-[#02111B] text-white py-20">
       <div className="max-w-6xl mx-auto px-6 text-center">
         <h2 className="text-4xl font-bold mb-12">Projects</h2>
 
@@ -43,7 +42,7 @@ export default function ProjectSection() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-[#FFBF00] rounded-xl shadow-lg p-6 flex flex-col justify-between transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+              className="bg-[#3F4045] rounded-xl shadow-lg p-6 flex flex-col justify-between transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
             >
               <div>
                 <h3 className="text-2xl font-bold mb-4">{project.title}</h3>
@@ -52,7 +51,7 @@ export default function ProjectSection() {
               <div className="flex justify-center gap-4 mt-auto">
                 <Button
                   asChild
-                  className="bg-[#E83F6F] hover:bg-[#c52b5b] text-white font-semibold text-sm"
+                  className="bg-[#30292F] hover:bg-[#1f1b1e] text-white font-semibold text-sm"
                 >
                   <a href={project.link} target="_blank" rel="noopener noreferrer">
                     Live Site
@@ -61,7 +60,7 @@ export default function ProjectSection() {
                 <Button
                   asChild
                   variant="outline"
-                  className="border-[#E83F6F] text-[#E83F6F] hover:bg-[#E83F6F] hover:text-white"
+                  className="border-[#30292F] text-[#30292F] hover:bg-[#30292F] hover:text-white"
                 >
                   <a href={project.github} target="_blank" rel="noopener noreferrer">
                     GitHub
